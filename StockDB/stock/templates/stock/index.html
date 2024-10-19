@@ -1,0 +1,96 @@
+{% extends 'stock/base.html' %}
+
+{% block content %}
+
+<div>
+    <div class="row">
+        <div class="col-sm-11 col-md-8 mx-auto mt-5 px-3">
+            <!--<h1 class="fw-light">Halda ladu</h1>-->
+            <!--<p class="fw-light">Safety stock meeldetuletused jne</p>-->
+            <h4 class="fw-light text-center">StockAid - väikeste ja alustavate ettevõtete laohalduse lahendus!</h4>
+            <p class="text-center">
+            <br />
+Me mõistame, kui oluline on tõhus varude haldamine, eriti väikeste ja alustavate ettevõtete jaoks.
+<br /><br />
+Seetõttu oleme loonud StockAid'i – lihtsa ja kasutajasõbraliku tarkvara, mis võimaldab teil oma laovarusid kiiresti ja täpselt hallata. Meie platvorm on loodud skaleeritavaks ja paindlikuks, et saaksite oma äri kasvatada ilma keeruliste ja kulukate lahendusteta.
+<br /><br />
+Olgu teil vaja jälgida tooteid, optimeerida lao tööd või suurendada tellimuste täitmise kiirust – StockAid on siin, et toetada teie äritegevust igal sammul.
+<br /><br />
+            </p>
+        </div>
+    </div>
+</div>
+<style>
+.card {display: inline-block;}
+</style>
+            <div class="container">
+                <div class="card-group">
+                <div class="card-deck mb-3 text-center mx-auto">
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            Proovi pakett
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                Tasuta
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Maksimaalselt 2 kasutajat</li>
+                                <li>500 MB mälumahtu</li>
+                                <li>Reklaamid</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-success">
+                                Loo kasutaja
+                            </button>
+                        </div>
+                    </div>
+            
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            Standard pakett
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                3€ kuus
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Maksimaalelt 5 kasutajat</li>
+                                <li>3 GB mälumahtu</li>
+                                <li>&nbsp;</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-success">
+                                Telli
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="card mb-4 box-shadow">
+                        <div class="card-header">
+                            Äripakett
+                        </div>
+                        <div class="card-body">
+                            <h1 class="card-title pricing-card-title">
+                                3€ kasutaja/kuus
+                            </h1>
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li>Piiramatu mälumaht</li>
+                                <li>Tehniline tugi</li>
+                                <li>Kohalik server*</li>
+                            </ul>
+                            <button type="button" class="btn btn-outline-success">
+                                Telli
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <a href="{% url 'dashboard' %}" class="btn btn-primary">Get Started Now!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
